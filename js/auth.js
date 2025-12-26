@@ -12,6 +12,7 @@ function register() {
   })
     .then(res => res.json())
     .then(data => {
+      console.log("Registration Response:", data);
       alert(data.message);
       window.location.href = "login.html";
     })
@@ -32,7 +33,8 @@ function login() {
       if (!res.ok) throw new Error();
       return res.json();
     })
-    .then(() => {
+    .then(data => {
+      console.log("Login Success:", data);
       localStorage.setItem("loggedIn", "true");
       window.location.href = "dashboard.html";
     })
