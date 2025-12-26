@@ -1,10 +1,14 @@
 const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, "public"), { extensions: ["html"] }));
 
 // Create database
 const db = new sqlite3.Database("users.db");
@@ -17,6 +21,13 @@ db.run(`
     password TEXT
   )
 `);
+
+// Routes for serving HTML files explicitly
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
+app.get("/login", (req, res) => res.sendFile(path.join(__dirname, "public", "login.html")));
+app.get("/register", (req, res) => res.sendFile(path.join(__dirname, "public", "register.html")));
+app.get("/dashboard", (req, res) => res.sendFile(path.join(__dirname, "public", "dashboard.html")));
+app.get("/payment", (req, res) => res.sendFile(path.join(__dirname, "public", "payment.html")));
 
 // Register
 app.post("/register", (req, res) => {
@@ -54,3 +65,4 @@ app.post("/login", (req, res) => {
 app.listen(3000, () => {
   console.log("✅ Server running on http://localhost:3000");
 });
+
