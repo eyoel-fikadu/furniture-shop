@@ -1,4 +1,6 @@
-const API_URL = "http://localhost:3000";
+const API_URL = window.location.hostname === "localhost"
+  ? "http://localhost:3000"
+  : "https://your-backend-api.com"; // Replace with your production API URL
 
 // Register
 function register() {

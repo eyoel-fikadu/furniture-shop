@@ -98,6 +98,36 @@ const furnitureData = [
         description: "A tall, sturdy bookshelf designed for the bibliophile. Adjustable shelves allow for customizable organization.",
         material: "Solid oak and oak veneer, mortise and tenon joinery.",
         dimensions: "36\"W x 12\"D x 72\"H"
+    },
+    {
+        id: "scandinavian-sideboard",
+        name: "Nordic Oak Sideboard",
+        type: "storage",
+        price: 1100,
+        image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2",
+        description: "A masterclass in Scandinavian utility and grace. This sideboard provides ample storage with a minimalist footprint, featuring hand-carved handles.",
+        material: "100% Solid White Oak, finished with organic linseed oil for a natural, low-sheen glow. Features hidden soft-close European hinges and dovetail drawer joints.",
+        dimensions: "70\"W x 18\"D x 30\"H"
+    },
+    {
+        id: "industrial-desk",
+        name: "Forge Executive Desk",
+        type: "table",
+        price: 1350,
+        image: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd",
+        description: "The perfect command center for the modern executive. This desk combines reclaimed wood with industrial steel for a powerful, professional aesthetic.",
+        material: "Reclaimed American Pine slab (2-inch thick), hand-forged heavy-duty steel legs with a matte black powder coat. Each top is unique with natural knots and character marks.",
+        dimensions: "60\"W x 30\"D x 29\"H"
+    },
+    {
+        id: "plush-ottoman",
+        name: "Cloud Velvet Ottoman",
+        type: "chair",
+        price: 240,
+        image: "https://images.unsplash.com/photo-1594913785162-e6786659ca2b",
+        description: "Whether used as a footrest or extra seating, this ottoman brings a touch of cloud-like softness to your room. Lightweight but incredibly stable.",
+        material: "High-density multi-layer memory foam, wrapped in Italian silk-velvet. Solid pine inner frame for structural integrity.",
+        dimensions: "24\"D x 18\"H"
     }
 ];
 
