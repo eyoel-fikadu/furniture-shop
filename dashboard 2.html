@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elegant Furniture Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="checkLogin()">
+
+<div class="container mt-4">
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Elegant Furniture Store</h2>
+    <button class="btn btn-danger" onclick="logout()">Logout</button>
+  </div>
+
+  <div class="row">
+
+    <!-- Luxury Leather Sofa -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <img src="img/sofa.png" class="card-img-top" alt="Luxury Sofa">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Leather Sofa</h5>
+          <p class="card-text">
+            Leather sofa with modern design and extra comfort.
+          </p>
+          <h6 class="text-success">$1,250</h6>
+          <button class="btn btn-primary w-100 mt-2"
+                  onclick="addToCart('Luxury Leather Sofa', 1250)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Designer Lounge Chair -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <img src="img/chair.png" class="card-img-top" alt="Designer Chair">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Lounge Chair</h5>
+          <p class="card-text">
+            Elegant wooden lounge chair with soft cushion.
+          </p>
+          <h6 class="text-success">$320</h6>
+          <button class="btn btn-primary w-100 mt-2"
+                  onclick="addToCart('Designer Lounge Chair', 320)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modern King Bed -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <img src="img/dining.png" class="card-img-top" alt="Luxury Bed">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Dining Table</h5>
+          <p class="card-text">
+            Stylish king-size bed with premium wood finishing.
+          </p>
+          <h6 class="text-success">$1,800</h6>
+          <button class="btn btn-primary w-100 mt-2"
+                  onclick="addToCart('Modern King Bed', 1800)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luxury Dining Table -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf" class="card-img-top" alt="Dining Table">
+        <div class="card-body">
+          <h5 class="card-title">Modern King Bed</h5>
+          <p class="card-text">
+            Marble-top dining table with modern steel legs.
+          </p>
+          <h6 class="text-success">$2,100</h6>
+          <button class="btn btn-primary w-100 mt-2"
+                  onclick="addToCart('Luxury Dining Table', 2100)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modern Wardrobe -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <img src="img/wardrobe.png" class="card-img-top" alt="Wardrobe">
+        <div class="card-body">
+          <h5 class="card-title">Modern Wardrobe</h5>
+          <p class="card-text">
+            Spacious wardrobe with sliding doors and mirror.
+          </p>
+          <h6 class="text-success">$1,450</h6>
+          <button class="btn btn-primary w-100 mt-2"
+                  onclick="addToCart('Modern Wardrobe', 1450)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Minimal Coffee Table -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <img src="img/coffee.png" class="card-img-top" alt="Coffee Table">
+        <div class="card-body">
+          <h5 class="card-title">Minimal Coffee Table</h5>
+          <p class="card-text">
+            Elegant coffee table perfect for modern living rooms.
+          </p>
+          <h6 class="text-success">$280</h6>
+          <button class="btn btn-primary w-100 mt-2"
+                  onclick="addToCart('Minimal Coffee Table', 280)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

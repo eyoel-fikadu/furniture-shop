@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Soft glass-style content box */
+.hero-box {
+  background: rgba(60, 50, 45, 0.55); /* warm furniture tone */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  padding: 50px 40px;
+  border-radius: 18px;
+  text-align: center;
+  max-width: 520px;
+  width: 90%;
+
+  color: #ffffff;
+}
+
+/* Buttons harmony */
+.hero-box .btn-light {
+  color: #333;
+  font-weight: 500;
+}
+
+.hero-box .btn-outline-light {
+  border-color: #fff;
+}
+.hero {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* keeps text readable, not heavy */
+  color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+  width: 100%;
+}
+
+/* /* Buttons harmony */
+.hero-box .btn-light {
+  color: #333;
+  font-weight: 500;
+} */
+
+
+button {
+  border-radius: 30px;
+}
+.telebirr-logo {
+  width: 100%;
+  max-width: 320px;   /* You can increase to 320px if you like */
+  height: auto;       /* VERY IMPORTANT → prevents cutting */
+  object-fit: contain; /* Ensures full logo is visible */
+  display: block;
+  margin: 0 auto;
+}
+
+.pay-btn {
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+}
+.telebirr-logo {
+  image-rendering: -webkit-optimize-contrast;
+}
+/* Login & Register Background */
+
+.auth-overlay {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login Card */
+.auth-card {
+  background-color: #ffffff;
+  padding: 35px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+.auth-page {
+  min-height: 100vh;
+  background-image: url('/furniture-shop/img/bg-img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-tagline {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  color: #f1f1f1;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+.card-img-top {
+  height: 300px;          /* fixed visual height */
+  object-fit: cover;     /* fills area without distortion */
+}
+
