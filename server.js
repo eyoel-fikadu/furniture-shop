@@ -27,6 +27,7 @@ app.get("/", (req, res) => res.sendFile(path.join(__dirname, "public", "index.ht
 app.get("/login", (req, res) => res.sendFile(path.join(__dirname, "public", "login.html")));
 app.get("/register", (req, res) => res.sendFile(path.join(__dirname, "public", "register.html")));
 app.get("/dashboard", (req, res) => res.sendFile(path.join(__dirname, "public", "dashboard.html")));
+app.get("/furniture-detail", (req, res) => res.sendFile(path.join(__dirname, "public", "furniture-detail.html")));
 app.get("/payment", (req, res) => res.sendFile(path.join(__dirname, "public", "payment.html")));
 
 // Register
